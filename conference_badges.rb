@@ -17,5 +17,5 @@ rooms
 end
 
 def printer(attendees, speakers)
- 
+ batch_badge_creator.each do |badges|
 end
