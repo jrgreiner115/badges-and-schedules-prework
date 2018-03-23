@@ -16,7 +16,6 @@ speakers.each_with_index {|name, index| rooms << "Hello, #{name}! You'll be assi
 rooms
 end
 
-def printer
-  puts badges
-  puts rooms
+def printer(attendees, speakers)
+ 
 end
