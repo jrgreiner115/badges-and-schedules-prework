@@ -11,9 +11,10 @@ badges
 end
 
 def assign_rooms(speakers)
-  badges = []
-attendees.each {|name| badges << "Hello, my name is #{name}."}
-badges
+  rooms = []
+  i = 0
+speakers.each {|name| room << "Hello, #{name}! You'll be assigned to room #{i}."}
+rooms
 end
 
 def printer
