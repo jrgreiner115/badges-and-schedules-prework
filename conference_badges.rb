@@ -13,7 +13,8 @@ end
 def assign_rooms(speakers)
   rooms = []
   i = 1
-speakers.each {|name, i| rooms << "Hello, #{name}! You'll be assigned to room #{i}."}
+speakers.each {|name| rooms << "Hello, #{name}! You'll be assigned to room #{i}."}
+i =+ 1
 rooms
 end
 
