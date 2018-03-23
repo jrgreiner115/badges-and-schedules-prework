@@ -10,17 +10,17 @@ attendees.each {|name| badges << "Hello, my name is #{name}."}
 badges
 end
 
-def assign_rooms(speakers)
+def assign_rooms(attendees)
   rooms = []
-speakers.each_with_index {|name, index| rooms << "Hello, #{name}! You'll be assigned to room #{index + 1}!"}
+attendees.each_with_index {|name, index| rooms << "Hello, #{name}! You'll be assigned to room #{index + 1}!"}
 rooms
 end
 
-def printer(attendees, speakers)
+def printer(attendees)
  batch_badge_creator(attendees).each do |badges|
    puts badges
 end
-assign_rooms(speakers).each do |rooms|
+assign_rooms(attendees).each do |rooms|
   puts rooms
 end
 end
