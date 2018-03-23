@@ -20,3 +20,4 @@ def printer(attendees, speakers)
  batch_badge_creator.each do |badges|
    puts badges
 end
+end
